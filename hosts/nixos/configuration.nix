@@ -14,7 +14,6 @@
   users.users.vespera.extraGroups = [ "networkmanager" "wheel" ];
   
   # Home Manager via Flakes module
-  home-manager.users.vespera = import ../../home/home.nix;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = false;

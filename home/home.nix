@@ -62,5 +62,31 @@ in
       $DRY_RUN_CMD ${pkgs.git}/bin/git push origin main
     fi
   '';
-}
+
+  systemd.user.services.dotfiles-sync = {
+    Unit.Description = "Auto-commit and push dotfiles";
+    Service = {
+      Type = "oneshot";
+      WorkingDirectory = "${config.home.homeDirectory}/.dotfiles";
+      ExecStart = pkgs.writeShellScript "dotfiles-sync" ''
+        set -e
+        cd ${config.home.homeDirectory}/.dotfiles
+        ${pkgs.git}/bin/git pull --rebase --autostash origin main || true
+        ${pkgs.git}/bin/git add -A
+        if ! ${pkgs.git}/bin/git diff --cached --quiet; then
+          ${pkgs.git}/bin/git commit -m "auto-sync: $(date -Iseconds)"
+          ${pkgs.git}/bin/git push origin main
+        fi
+      '';
+    };
+  };
+
+  systemd.user.timers.dotfiles-sync = {
+    Unit.Description = "Timer for dotfiles auto-sync";
+    Timer = {
+      OnCalendar = "*:0/30";
+      Persistent = true;
+    };
+    Install.WantedBy = [ "timers.target" ];
+  };}
 
