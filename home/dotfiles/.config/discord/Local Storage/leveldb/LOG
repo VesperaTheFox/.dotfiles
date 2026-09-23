@@ -1,6 +1,0 @@
-2026/08/23-09:34:16.137 da52 Reusing MANIFEST /home/vespera/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2026/08/23-09:34:16.143 da52 Recovering log #116
-2026/08/23-09:34:16.143 da52 Reusing old log /home/vespera/.config/discord/Local Storage/leveldb/000116.log 
-2026/08/23-09:39:35.686 da53 Level-0 table #122: started
-2026/08/23-09:39:35.716 da53 Level-0 table #122: 2154689 bytes OK
-2026/08/23-09:39:35.730 da53 Delete type=0 #116

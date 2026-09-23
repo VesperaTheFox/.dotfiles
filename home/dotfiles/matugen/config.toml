@@ -1,0 +1,35 @@
+[config]
+
+[templates.kitty]
+input_path = '/home/vespera/.config/matugen/templates/kitty-colors.conf'
+output_path = '/home/vespera/.config/kitty/colors/matugen.conf'
+post_hook = "kill -SIGUSR1 $(pidof kitty)"
+
+[templates.waybar]
+input_path = '/home/vespera/.config/matugen/templates/colors.css'
+output_path = 'colors/matugen.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.gtk3]
+input_path = '/home/vespera/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+
+[templates.gtk4]
+input_path = '/home/vespera/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.prismlauncher]
+input_path = '/home/vespera/.config/matugen/templates/prismlauncher.json'
+output_path = '~/.local/share/PrismLauncher/themes/matugen/themes.json'
+
+[templates.vscode-raw]
+input_path = '/home/vespera/.config/matugen/templates/vscode-colors'
+output_path = '/home/vespera/.cache/matugen/vscode-colors'
+
+[templates.vscode-json]
+input_path = '/home/vespera/.config/matugen/templates/vscode-colors.json'
+output_path = '/home/vespera/.cache/matugen/vscode-colors.json'
+
+[templates.steam]
+input_path = '/home/vespera/.config/matugen/templates/steam.css'
+output_path = '/home/vespera/.config/AwdSteamGTK/custom.css'

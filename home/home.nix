@@ -1,27 +1,51 @@
-{ inputs, pkgs, ... }: {
+{ config, lib, inputs, pkgs, ... }: 
+
+let
+  dotfilesDir = "${config.home.homeDirectory}/.dotfiles/home/dotfiles";
+
+  entries = builtins.readDir ./dotfiles;
+
+  excluded = [ "README.md" ".git" ".gitignore" ];
+
+  mkLink = name: config.lib.file.mkOutOfStoreSymlink "${dotfilesDir}/${name}";
+
+  configFiles = lib.mapAttrs'
+    (name: _type: lib.nameValuePair name { source = mkLink name; })
+    (lib.filterAttrs (name: _: !(builtins.elem name excluded)) entries);
+in
+{
 
   home.username = "vespera";
   home.homeDirectory = "/home/vespera";
   home.stateVersion = "26.05";
 
-  # Enable and configure GTK using Catppuccin
   gtk = {
     enable = true;
-    # Let Catppuccin handle the theme styling automatically
+
   };
-  
-  # Optional: If you want standard GTK dark mode enforcement
+
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
     };
+  }
+
+  programs.git = {
+    enable = true;
+    userName = "VesperaTheFox";
+    userEmail = "michaelplblum@gmail.com";
   };
 
-  # Symlinks for apps without native nix modules (Step 6 approach)
-  xdg.configFile."hypr".source = ./dotfiles/hypr;
-  xdg.configFile."kitty".source = ./dotfiles/kitty;
-  xdg.configFile."nvim".source = ./dotfiles/nvim;
-  xdg.configFile."rofi".source = ./dotfiles/rofi;
-  xdg.configFile."waybar".source = ./dotfiles/waybar;
+  xdg.configFile = configFiles;
+
+  home.activation.dotfilesSync = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    cd ${config.home.homeDirectory}/.dotfiles
+    $DRY_RUN_CMD ${pkgs.git}/bin/git pull --rebase --autostash origin main || true
+    $DRY_RUN_CMD ${pkgs.git}/bin/git add -A
+    if ! ${pkgs.git}/bin/git diff --cached --quiet; then
+      $DRY_RUN_CMD ${pkgs.git}/bin/git commit -m "auto-sync on switch: $(date -Iseconds)"
+      $DRY_RUN_CMD ${pkgs.git}/bin/git push origin main
+    fi
+  '';
 }
 

@@ -1,0 +1,10 @@
+[Default Applications]
+application/zip=userapp-unzip-WSVEU3.desktop
+text/x-lua=userapp-nvim-RIQKU3.desktop
+x-scheme-handler/discord=vesktop.desktop
+application/java-archive=userapp-java-KVF7U3.desktop
+
+[Added Associations]
+application/zip=userapp-unzip-WSVEU3.desktop;
+text/x-lua=userapp-nvim-RIQKU3.desktop;
+application/java-archive=userapp-java-KVF7U3.desktop;
