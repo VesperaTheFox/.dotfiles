@@ -5,13 +5,30 @@ let
 
   entries = builtins.readDir ./dotfiles;
 
-  excluded = [ "README.md" ".git" ".gitignore" ];
+  included = [
+    "gtk-3.0"
+    "gtk-4.0"
+    "hypr"
+    "kitty"
+    "librewolf"
+    "nemo"
+    "neofetch"
+    "nvim"
+    "obsidian"
+    "obs-studio"
+    "quickshell"
+    "rofi"
+    "vesktop"
+    "waybar"
+    "hyfetch.json"
+    "starship.toml"
+  ];
 
   mkLink = name: config.lib.file.mkOutOfStoreSymlink "${dotfilesDir}/${name}";
 
   configFiles = lib.mapAttrs'
     (name: _type: lib.nameValuePair name { source = mkLink name; })
-    (lib.filterAttrs (name: _: !(builtins.elem name excluded)) entries);
+    (lib.filterAttrs (name: _: builtins.elem name include) entries);
 in
 {
 
@@ -28,7 +45,7 @@ in
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
     };
-  }
+  };
 
   programs.git = {
     enable = true;
