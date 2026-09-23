@@ -28,7 +28,7 @@ let
 
   configFiles = lib.mapAttrs'
     (name: _type: lib.nameValuePair name { source = mkLink name; })
-    (lib.filterAttrs (name: _: builtins.elem name include) entries);
+    (lib.filterAttrs (name: _: builtins.elem name included) entries);
 in
 {
 
