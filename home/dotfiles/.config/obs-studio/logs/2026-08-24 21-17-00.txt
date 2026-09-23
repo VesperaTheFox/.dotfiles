@@ -1,0 +1,155 @@
+21:17:00.649: Platform: Wayland
+21:17:00.649: CPU Name: AMD Ryzen 7 9800X3D 8-Core Processor
+21:17:00.649: CPU Speed: 4163.346MHz
+21:17:00.649: Physical Cores: 8, Logical Cores: 8
+21:17:00.649: Physical Memory: 31137MB Total, 29107MB Free
+21:17:00.649: Kernel Version: Linux 6.18.45
+21:17:00.649: Distribution: NixOS "26.11"
+21:17:00.649: Desktop Environment: Hyprland (hyprland)
+21:17:00.649: Session Type: wayland
+21:17:00.650: Current Date/Time: 2026-08-24, 09:17:00 PM
+21:17:00.650: Browser Hardware Acceleration: true
+21:17:00.650: Qt Version: 6.11.1 (runtime), 6.11.1 (compiled)
+21:17:00.650: Portable mode: false
+21:17:00.692: OBS 32.1.2 (linux)
+21:17:00.692: ---------------------------------
+21:17:00.693: ---------------------------------
+21:17:00.693: audio settings reset:
+21:17:00.693: 	samples per sec: 48000
+21:17:00.693: 	speakers:        2
+21:17:00.693: 	max buffering:   960 milliseconds
+21:17:00.693: 	buffering type:  dynamically increasing
+21:17:00.694: ---------------------------------
+21:17:00.694: Initializing OpenGL...
+21:17:00.694: Using EGL/Wayland
+21:17:00.717: Initialized EGL 1.5
+21:17:00.727: Loading up OpenGL on adapter AMD AMD Radeon RX 9070 XT (radeonsi, gfx1201, ACO, DRM 3.64, 6.18.45)
+21:17:00.727: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 26.2.1, shading language 4.60
+21:17:00.749: ---------------------------------
+21:17:00.749: video settings reset:
+21:17:00.749: 	base resolution:   5120x1440
+21:17:00.749: 	output resolution: 2556x720
+21:17:00.749: 	downscale filter:  Bicubic
+21:17:00.749: 	fps:               60/1
+21:17:00.749: 	format:            NV12
+21:17:00.749: 	YUV mode:          Rec. 709/Partial
+21:17:00.749: NV12 texture support enabled
+21:17:00.749: P010 texture support not available
+21:17:00.752: Audio monitoring device:
+21:17:00.752: 	name: Default
+21:17:00.752: 	id: default
+21:17:00.754: ---------------------------------
+21:17:00.756: Failed to load 'en-US' text for module: 'decklink-captions.so'
+21:17:00.757: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+21:17:00.758: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+21:17:00.758: Failed to initialize module 'decklink.so'
+21:17:00.881: [pipewire] No capture sources available
+21:17:00.887: v4l2loopback not installed, virtual camera not registered
+21:17:00.889: [obs-browser]: Version 2.26.8
+21:17:00.889: [obs-browser]: CEF Version 127.0.6533.120 (runtime), 127.0.0-6533-fix-stutter-and-osr-extra-info.3042+g176b09c+chromium-127.0.6533.120 (compiled)
+21:17:00.897: VAAPI: API version 1.24
+21:17:00.897: FFmpeg VAAPI H264 encoding supported
+21:17:00.899: FFmpeg VAAPI AV1 encoding supported
+21:17:00.901: FFmpeg VAAPI HEVC encoding supported
+21:17:00.907: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+21:17:00.907: 
+21:17:00.907: NVENC not supported
+21:17:00.907: Failed to initialize module 'obs-nvenc.so'
+21:17:00.933: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.3 | RPC Version: 1)
+21:17:00.933: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.11.1 | Qt version (run-time): 6.11.1
+21:17:00.933: [obs-websocket] [obs_module_load] Linked ASIO Version: 103800
+21:17:00.938: [obs-websocket] [obs_module_load] Module loaded.
+21:17:00.944: [vlc-video]: VLC 3.0.23 Vetinari found, VLC video source enabled
+21:17:00.944: ---------------------------------
+21:17:00.944:   Loaded Modules:
+21:17:00.944:     vlc-video.so
+21:17:00.944:     text-freetype2.so
+21:17:00.944:     rtmp-services.so
+21:17:00.944:     obs-x264.so
+21:17:00.944:     obs-websocket.so
+21:17:00.944:     obs-webrtc.so
+21:17:00.944:     obs-vst.so
+21:17:00.944:     obs-transitions.so
+21:17:00.944:     obs-qsv11.so
+21:17:00.944:     obs-outputs.so
+21:17:00.944:     obs-libfdk.so
+21:17:00.944:     obs-filters.so
+21:17:00.944:     obs-ffmpeg.so
+21:17:00.944:     obs-browser.so
+21:17:00.944:     linux-v4l2.so
+21:17:00.944:     linux-pulseaudio.so
+21:17:00.944:     linux-pipewire.so
+21:17:00.944:     linux-jack.so
+21:17:00.944:     linux-capture.so
+21:17:00.944:     linux-alsa.so
+21:17:00.944:     image-source.so
+21:17:00.944:     frontend-tools.so
+21:17:00.944:     decklink-output-ui.so
+21:17:00.944:     decklink-captions.so
+21:17:00.944: ---------------------------------
+21:17:00.944: ---------------------------------
+21:17:00.944: Available Encoders:
+21:17:00.944:   Video Encoders:
+21:17:00.944: 	- ffmpeg_svt_av1 (SVT-AV1)
+21:17:00.944: 	- ffmpeg_aom_av1 (AOM AV1)
+21:17:00.944: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+21:17:00.944: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+21:17:00.944: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+21:17:00.944: 	- obs_x264 (x264)
+21:17:00.944:   Audio Encoders:
+21:17:00.944: 	- ffmpeg_aac (FFmpeg AAC)
+21:17:00.944: 	- ffmpeg_opus (FFmpeg Opus)
+21:17:00.944: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+21:17:00.944: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+21:17:00.944: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+21:17:00.944: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+21:17:00.944: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+21:17:00.944: 	- libfdk_aac (libfdk AAC)
+21:17:00.944: ==== Startup complete ===============================================
+21:17:00.971: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NameHasNoOwner", "Could not activate remote peer 'org.freedesktop.portal.Desktop': startup job failed")
+21:17:00.971: All scene data cleared
+21:17:00.971: ------------------------------------------------
+21:17:00.974: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+21:17:00.974: Deduplication logic is being applied to all monitored sources.
+21:17:00.974: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.8) 15.0.0'
+21:17:00.974: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+21:17:00.974: pulse-input: Started recording from 'alsa_output.usb-Generic_USB_Audio-00.HiFi__Speaker__sink.monitor' (default)
+21:17:00.974: [Loaded global audio device]: 'Desktop Audio'
+21:17:00.974: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.8) 15.0.0'
+21:17:00.974: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+21:17:00.974: pulse-input: Started recording from 'alsa_input.usb-Anker_PowerConf_C200_Anker_PowerConf_C200_ACNV9P1F17305327-02.analog-stereo' (default)
+21:17:00.974: [Loaded global audio device]: 'Mic/Aux'
+21:17:00.976: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.8) 15.0.0'
+21:17:00.976: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+21:17:00.976: pulse-input: Started recording from 'alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor'
+21:17:00.977: Switched to scene 'Scene'
+21:17:00.977: ------------------------------------------------
+21:17:00.977: Loaded scenes:
+21:17:00.977: - scene 'Scene':
+21:17:00.977:     - source: 'Group' (group)
+21:17:00.977:         - source: 'Audio Output Capture (PulseAudio)' (pulse_output_capture)
+21:17:00.977: ------------------------------------------------
+21:17:01.081: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+21:17:01.081: Deduplication logic is being applied to all monitored sources.
+21:17:01.504: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+21:17:01.504: 
+21:17:01.632: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Audio Output Capture (PulseAudio))
+21:17:01.632: 
+21:17:06.549: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+21:17:06.552: User added source 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source) to scene 'Scene'
+21:17:06.567: [camera-portal] Selected format for ''
+21:17:06.567: [camera-portal] selected camera ''
+21:17:06.572: [camera-portal] Error accessing camera: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not activate remote peer 'org.freedesktop.portal.Desktop': startup job failed
+21:17:08.001: [camera-portal] Updating device 
+21:17:11.117: User Removed source 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source) from scene 'Scene'
+21:20:42.383: ==== Shutting down ==================================================
+21:20:42.386: pulse-input: Stopped recording from 'alsa_output.usb-Generic_USB_Audio-00.HiFi__Speaker__sink.monitor'
+21:20:42.386: pulse-input: Got 8854 packets with 10624800 frames
+21:20:42.386: Deduplication logic stopped.
+21:20:42.386: pulse-input: Stopped recording from 'alsa_input.usb-Anker_PowerConf_C200_Anker_PowerConf_C200_ACNV9P1F17305327-02.analog-stereo'
+21:20:42.386: pulse-input: Got 8848 packets with 10617600 frames
+21:20:42.386: pulse-input: Stopped recording from 'alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor'
+21:20:42.386: pulse-input: Got 8849 packets with 10618800 frames
+21:20:42.411: All scene data cleared
+21:20:42.411: ------------------------------------------------
+21:20:42.411: The Wayland connection broke. Did the Wayland compositor die?

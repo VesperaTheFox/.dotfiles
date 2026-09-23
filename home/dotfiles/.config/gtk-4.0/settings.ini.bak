@@ -1,0 +1,7 @@
+[Settings]
+gtk-theme-name=Graphite-pink-Dark-nord
+gtk-icon-theme-name=Vimix-white
+gtk-font-name=Iosevka Nerd Font Propo Medium Italic 12
+gtk-cursor-theme-name=Layan-cursors
+gtk-cursor-theme-size=36
+gtk-application-prefer-dark-theme=1

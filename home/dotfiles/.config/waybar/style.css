@@ -1,0 +1,63 @@
+* {
+  border: none;
+  font-family: Iosevka Nerd Font Propo;
+  font-weight: bold;
+  font-size: 18px;
+  min-width: 0;
+  color: #FFFAED;
+  margin: 0 2px;
+}
+
+window#waybar {
+  background: rgba(40, 33, 40, 0.75);
+  opacity: 0.75;
+}
+
+.modules-left {
+  margin-top: 15px;
+}
+
+.modules-right {
+  margin-bottom: 15px;
+}
+
+#custom-launcher,
+#clock,
+#workspaces,
+#custom-notification,
+#custom-weather,
+#custom-pipewire,
+#network,
+#cava,
+#custom-media,
+#bluetooth,
+#custom-powermenu {
+  border-radius: 10;
+  background-color: #0D0B0D;
+  margin-bottom: 10px;
+  padding: 10 2px;
+}
+
+#custom-pipewire {
+  padding-top: 5;
+}
+
+#custom-powermenu {
+  margin-bottom: 0px;
+}
+
+#workspaces button {
+  padding: 6px 0px;
+  margin: 3px 5px;
+  border-radius: 50px;
+  background: #433843;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+  color: #FFD4FD;
+  padding: 15px 0px;
+  margin: 3px 5px;
+  border-radius: 50px;
+  background: #FFD4FD;
+}
