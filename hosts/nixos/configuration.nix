@@ -73,10 +73,20 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-  
-  # Enable GDM but disable Gnome.
-  services.displayManager.gdm.enable = true;
-  # services.xserver.desktopManager.gnome.enable = true;
+
+  services.greetd = {
+    enable = true;
+    settings = {
+      initial_session = {
+        command = "uwsm start hyprland-uwsm.desktop";
+        user = "vespera";
+      };
+      default_session = {
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd 'uwsm start hyprland-uwsm.desktop'";
+        user = "greeter";
+      };
+    };
+  };
 
   systemd.services.accounts-daemon.serviceConfig.TimeoutStartSec = "5s";
   systemd.services.accounts-daemon.serviceConfig.TimeoutStopSec = "5s";
@@ -84,7 +94,7 @@
   #Enable Hyprland
   programs.hyprland = {
     enable = true;
-    xwayland.enable = true;
+    withUWSM = true;
   };
 
   # XDG
