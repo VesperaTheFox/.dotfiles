@@ -1,0 +1,139 @@
+{
+    "layer": "top",
+    "position": "left",
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "cava",
+        "custom/notification",
+        "custom/media"
+    ],
+
+    "modules-right": [
+        "network",
+        "clock",
+        "bluetooth",
+        "custom/pipewire",
+        "custom/powermenu"
+    ],
+
+    "custom/launcher": {
+        "format": "",
+        "on-click": "rofi -show drun"
+    },
+
+    "hyprland/workspaces": {
+        "format": " ",
+	    "persistent-workspaces": {
+	    	"*": 5,
+            "DP1": 5
+	    }
+    },
+
+    "cava": {
+        "rotate": 90,
+	    //"cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+	    "framerate": 30,
+	    "autosens": 1,
+	    "sensitivity": 0.03,
+	    "bars": 20,
+        "bar_spacing": 2,
+	    "lower_cutoff_freq": 50,
+	    "higher_cutoff_freq": 10000,
+	    "method": "pulse",
+	    "source": "auto",
+	    "stereo": true,
+	    "reverse": false,
+	    "monstercat": false,
+	    "waves": false,
+	    "noise_reduction": 0.3,
+        "bar_delimiter": 0,
+	    "input_delay": 2,
+	    "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+	    "actions": {
+	    	"on-click-right": "mode"
+	    }
+    },
+
+    "custom/notification": {
+        "tooltip": true,
+        "format": "<span size='16pt'>{icon}</span>",
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "󰂜",
+            "dnd-notification": "󰂠",
+            "dnd-none": "󰪓",
+            "inhibited-notification": "󰂛",
+            "inhibited-none": "󰪑",
+            "dnd-inhibited-notification": "󰂛",
+            "dnd-inhibited-none": "󰪑"
+        },
+
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    "custom/media": {
+        "rotate": 90,
+        "format": "{icon} {text}",
+        "escape": true,
+        "return-type": "json",
+        "max-length": 20,
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl stop",
+        "smooth-scrolling-threshold": 1, // This value was tested using a trackpad, it should be lowered if using a mouse !!!!!btw it was!!!!!.
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "exec": "GI_TYPELIB_PATH=\"/run/current-system/sw/lib/girepository-1.0\" python3 -u /home/vespera/.dotfiles/home/dotfiles/waybar/scripts/mediaplayer.py"
+    },
+
+    "network": {
+    	"interface": "enp8s0",
+    	"format": "",
+    	"format-wifi": "{essid} 󰖩",
+    	"format-ethernet": "󰈁",
+    	"format-disconnected": "󰖪󰈂",
+    	"tooltip-format": "",
+    	"tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    	"tooltip-format-ethernet": "{ifname}",
+    	"tooltip-format-disconnected": "󰖪󰈂",
+    	"max-length": 50
+    },
+
+    "clock": {
+        "format": "{:%H\n%M\n%S}",
+        "interval": 1
+    },
+
+    "bluetooth": {
+        "controller": "controller",
+    	"format": " {status}",
+	    "format-disabled": "󰂲", // an empty format will hide the module
+    	"format-connected": " {num_connections} connected",
+	    "tooltip-format": "{controller_alias}\t{controller_address}",
+	    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+	    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+
+    "custom/pipewire": {
+        "rotate": 90,
+        "tooltip": false,
+        "max-length": 8,
+        "exec": "$HOME/.dotfiles/home/dotfiles/waybar/scripts/pipewire.sh",
+        "on-click": "pavucontrol &",
+        "on-click-right": "qpwgraph &"
+    },
+
+    "custom/powermenu": {
+        "format": "󰐥",
+        "tooltip": false,
+        "on-click": "poweroff"
+    }
+} 
