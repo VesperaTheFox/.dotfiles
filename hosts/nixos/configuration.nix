@@ -191,6 +191,7 @@
      dbus
      gimp
      steam-run
+     kicad
      git
      obsidian
      quickshell
