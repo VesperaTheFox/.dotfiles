@@ -192,6 +192,7 @@
      gimp
      steam-run
      kicad
+     udisks
      git
      obsidian
      quickshell
