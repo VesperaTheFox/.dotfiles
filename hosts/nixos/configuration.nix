@@ -209,6 +209,7 @@
      hyfetch
      rofi
      swaynotificationcenter
+     openssh
      xdg-desktop-portal-hyprland
      polkit_gnome
      nwg-look
