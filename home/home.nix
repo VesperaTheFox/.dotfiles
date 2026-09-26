@@ -53,7 +53,9 @@ in
 
   xdg.configFile = configFiles;
 
+
   home.activation.dotfilesSync = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    export PATH="${pkgs.openssh}/bin:$PATH"
     cd ${config.home.homeDirectory}/.dotfiles
     $DRY_RUN_CMD ${pkgs.git}/bin/git pull --rebase --autostash origin main || true
     $DRY_RUN_CMD ${pkgs.git}/bin/git add -A
@@ -69,6 +71,7 @@ in
       Type = "oneshot";
       WorkingDirectory = "${config.home.homeDirectory}/.dotfiles";
       ExecStart = pkgs.writeShellScript "dotfiles-sync" ''
+        export PATH="${pkgs.openssh}/bin:$PATH"
         set -e
         cd ${config.home.homeDirectory}/.dotfiles
         ${pkgs.git}/bin/git pull --rebase --autostash origin main || true
@@ -88,5 +91,6 @@ in
       Persistent = true;
     };
     Install.WantedBy = [ "timers.target" ];
-  };}
+  };
+}
 
