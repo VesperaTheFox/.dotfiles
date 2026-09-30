@@ -11,7 +11,7 @@
 
 user_pref("accessibility.typeaheadfind.flashBar", 0);
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1790650485);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1790654085);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1790726734);
 user_pref("app.update.lastUpdateTime.services-settings-poll-changes", 1790650485);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1790650485);
 user_pref("browser.bookmarks.restore_default_bookmarks", false);
@@ -47,7 +47,7 @@ user_pref("browser.startup.couldRestoreSession.count", 2);
 user_pref("browser.startup.lastColdStartupCheck", 1790701504);
 user_pref("browser.theme.toolbar-theme", 0);
 user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"unified-extensions-area\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"customizableui-special-spring1\",\"vertical-spacer\",\"urlbar-container\",\"customizableui-special-spring2\",\"downloads-button\",\"fxa-toolbar-menu-button\",\"reset-pbm-toolbar-button\",\"unified-extensions-button\",\"ublock0_raymondhill_net-browser-action\",\"firefoxcolor_mozilla_com-browser-action\",\"_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"vertical-tabs\":[],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"reset-pbm-toolbar-button\",\"developer-button\",\"screenshot-button\",\"ublock0_raymondhill_net-browser-action\",\"firefoxcolor_mozilla_com-browser-action\",\"_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\",\"vertical-tabs\",\"toolbar-menubar\",\"TabsToolbar\",\"PersonalToolbar\",\"unified-extensions-area\"],\"currentVersion\":25,\"newElementCount\":2}");
-user_pref("browser.urlbar.lastUrlbarSearchSeconds", 1790701509);
+user_pref("browser.urlbar.lastUrlbarSearchSeconds", 1790727366);
 user_pref("browser.urlbar.quickactions.timesShownOnboardingLabel", 3);
 user_pref("browser.urlbar.recentsearches.lastDefaultChanged", "1786830413317");
 user_pref("captchadetection.hasUnsubmittedData", false);
@@ -189,7 +189,7 @@ user_pref("storage.vacuum.last.index", 2);
 user_pref("storage.vacuum.last.places.sqlite", 1788672028);
 user_pref("toolkit.profiles.newProfileSubmitted", true);
 user_pref("toolkit.profiles.storeID", "31fe231d");
-user_pref("toolkit.startup.last_success", 1790625254);
+user_pref("toolkit.startup.last_success", 1790701503);
 user_pref("toolkit.telemetry.cachedClientID", "24263e1e-0ea9-4741-b631-a52de93d7f78");
 user_pref("toolkit.telemetry.cachedProfileGroupID", "e5546ba9-5798-40be-8f6e-ebfebe244d94");
 user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
