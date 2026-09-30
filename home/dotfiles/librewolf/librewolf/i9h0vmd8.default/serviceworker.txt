@@ -1,14 +1,14 @@
 12
 
-https://www.aliexpress.com/
-https://www.aliexpress.com/new-sw.js?version=0.0.86/js
+https://www.youtube.com/
+https://www.youtube.com/sw.js
 true
-{349093bc-21a8-4ca7-9267-8a818e019f6b}
+{d5fbce01-6ccc-4052-bb16-a69d1c26d060}
 0
-1790733538431600
-1790733538431925
-1790733537975733
-0
+1790736750845605
+1790736750845926
+1790736750351990
+1
 true
 0
 2
