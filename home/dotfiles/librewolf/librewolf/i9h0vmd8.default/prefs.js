@@ -11,7 +11,7 @@
 
 user_pref("accessibility.typeaheadfind.flashBar", 0);
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1790823293);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1790821440);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1790825040);
 user_pref("app.update.lastUpdateTime.services-settings-poll-changes", 1790823293);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1790823293);
 user_pref("browser.bookmarks.restore_default_bookmarks", false);
@@ -70,7 +70,7 @@ user_pref("distribution.iniFile.exists.appversion", "154.0-2");
 user_pref("distribution.iniFile.exists.value", true);
 user_pref("distribution.nixos.bookmarksProcessed", true);
 user_pref("dom.forms.autocomplete.formautofill", true);
-user_pref("dom.push.userAgentID", "efb9f8cde6b841d895f08e2f42719c76");
+user_pref("dom.push.userAgentID", "6209012d95d34b0993dac87f6a358a86");
 user_pref("dom.security.https_only_mode_ever_enabled", true);
 user_pref("extensions.activeThemeID", "{7aa7c68a-141f-45c9-a1c6-6e7382debbe1}");
 user_pref("extensions.blocklist.pingCountVersion", -1);
