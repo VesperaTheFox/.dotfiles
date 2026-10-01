@@ -70,7 +70,7 @@ user_pref("distribution.iniFile.exists.appversion", "154.0-2");
 user_pref("distribution.iniFile.exists.value", true);
 user_pref("distribution.nixos.bookmarksProcessed", true);
 user_pref("dom.forms.autocomplete.formautofill", true);
-user_pref("dom.push.userAgentID", "13cf6a9c5f75473b8a559b0cccc23343");
+user_pref("dom.push.userAgentID", "07b7f1cc6443441b8e49380e77216537");
 user_pref("dom.security.https_only_mode_ever_enabled", true);
 user_pref("extensions.activeThemeID", "{7aa7c68a-141f-45c9-a1c6-6e7382debbe1}");
 user_pref("extensions.blocklist.pingCountVersion", -1);
