@@ -11,7 +11,7 @@
 
 user_pref("accessibility.typeaheadfind.flashBar", 0);
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1790736885);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1790817840);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1790821440);
 user_pref("app.update.lastUpdateTime.services-settings-poll-changes", 1790736885);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1790736885);
 user_pref("browser.bookmarks.restore_default_bookmarks", false);
@@ -70,7 +70,7 @@ user_pref("distribution.iniFile.exists.appversion", "154.0-2");
 user_pref("distribution.iniFile.exists.value", true);
 user_pref("distribution.nixos.bookmarksProcessed", true);
 user_pref("dom.forms.autocomplete.formautofill", true);
-user_pref("dom.push.userAgentID", "07b7f1cc6443441b8e49380e77216537");
+user_pref("dom.push.userAgentID", "8306c2e4d8dd46a29837f9039b633b0d");
 user_pref("dom.security.https_only_mode_ever_enabled", true);
 user_pref("extensions.activeThemeID", "{7aa7c68a-141f-45c9-a1c6-6e7382debbe1}");
 user_pref("extensions.blocklist.pingCountVersion", -1);
@@ -102,7 +102,7 @@ user_pref("font.name.serif.x-western", "Iosevka Nerd Font Propo");
 user_pref("gecko.handlerService.defaultHandlersVersion", 1);
 user_pref("general.config.sandbox_enabled", true);
 user_pref("identity.fxaccounts.account.device.name", "vespera’s LibreWolf on nixos");
-user_pref("idle.lastDailyNotification", 1790733686);
+user_pref("idle.lastDailyNotification", 1790821482);
 user_pref("layout.css.prefers-color-scheme.content-override", 0);
 user_pref("librewolf.webgl.prompt", false);
 user_pref("media.gmp-manager.buildID", "20260812182057");
